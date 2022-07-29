@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "joJorqiRm7sEbIZEX3CZ8tGIzSztWJk410QXeom1YWBgKk4FyMwYCoOgBeSdbLinNuq95svcXxaNYd0Y97b66A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\90555\\source\\repos\\WeatherForecastApp\\WeatherForecastApp\\WeatherForecastApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\90555\\.nuget\\packages\\litedb\\5.0.12\\litedb.5.0.12.nupkg.sha512",
+    "C:\\Users\\90555\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\90555\\.nuget\\packages\\restsharp\\106.13.0\\restsharp.106.13.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,57 @@
+﻿@model WeatherForecastApp.Models.SearchByCity
+
+@{ViewData["Title"] = "SearchByCity";}
+
+@{
+    var favCities = Model.favCities;
+}
+
+<div class="container">
+    <form method="post">
+        <div class="container">
+            <h2>Search By City Name</h2>
+            <div>
+                <input asp-for="CityName" class="form-control" placeholder="Enter city name..." />
+                <button asp-controller="WeatherForecast" asp-action="SearchByCity" class="btn btn-outline-primary">
+                    Search
+                </button>
+                <span asp-validation-for="CityName" class="text-danger"></span>
+            </div>
+        </div>
+    </form>
+</div>
+
+@if (favCities.Count != 0)
+{
+
+    <div class="container my-3">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">x</th>
+                    <th scope="col">City Name</th>
+                    <th scope="col">Temperature</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in favCities)
+                {
+                    <tr>
+                        <th scope="row">x</th>
+                        <td>@item.Name</td>
+                        <td>@item.Temperature</td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+    </div>
+
+}
+
+<a href="/weatherForecast/AddFavCity" class="badge badge-primary my-3">Add New City</a>
+
+
+
+
